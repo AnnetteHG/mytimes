@@ -1,4 +1,8 @@
-.container-header {
+body {
+  margin: 0;
+}
+
+header {
   display: flex;
   font-family: Verdana;
   font-size: 14px;
@@ -6,18 +10,38 @@
   align-items: center;
   flex-wrap: wrap;
   border-bottom: 1px solid black;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 80px;
+  background-color: white;
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   color: MediumAquamarine;
   max-width: auto;
+  padding-left: 30px;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 
-.navigation {
+.logo span {
+  padding-left: 15px;
+}
+
+header nav {
+  display: flex;
+  padding-right: 40px;
   color: black;
-  display: inline-block;
 }
 
-.navigation-items {
+nav span {
   display: inline-block;
+  padding: 20px 10px;
+}
+
+nav a {
+  color: black;
 }
