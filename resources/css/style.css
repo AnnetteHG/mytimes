@@ -49,37 +49,39 @@ nav a {
 .main-content {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 .main-content .column-one {
   display: flex;
   width: 630px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   flex-direction: column;
   margin-top: 115px;
-  align: horizontal;
+  justify-content: center;
 }
 
-.mainstory,
+/*.mainstory,
 .story {
   border: 1px solid black;
-}
+}*/
 
 .main-content .column-two {
   display: flex;
   width: 300px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   flex-direction: column;
   margin-top: 115px;
+  margin-left: 30px;
 }
 
 .main-content .column-three {
   display: flex;
   width: 240px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   flex-direction: column;
   margin-top: 115px;
+  margin-left: 30px;
 }
 
 h2 {
@@ -106,32 +108,35 @@ h3 {
 
 .mainstory {
   display: flex;
-  background-image: url("/Users/Annette/mytimes/resources/images/img-story-main.png");
+  background-image: url(/Users/Annette/mytimes/resources/images/img-story-main.png);
   font-family: Georgia;
   font-weight: bold;
   font-size: 40px;
   color: white;
+  flex-wrap: wrap;
   height: 300px;
   width: auto;
 }
 
 .story-imagetwo {
   display: flex;
-  background-image: url("/Users/Annette/mytimes/resources/images/img-story-2.png");
+  background-image: url(/Users/Annette/mytimes/resources/images/img-story-2.png);
   height: 300px;
   width: auto;
 }
 
 .story-imagethree {
   display: flex;
-  background-image: url("/Users/Annette/mytimes/resources/images/img-story-3.png");
+  background-image: url(/Users/Annette/mytimes/resources/images/img-story-3.png);
   height: 300px;
+  flex-wrap: wrap;
 }
 
 .story-imagefour {
   display: flex;
-  background-image: url("/Users/Annette/mytimes/resources/images/img-story-1.png");
+  background-image: url(/Users/Annette/mytimes/resources/images/img-story-1.png);
   height: 300px;
+  flex-wrap: wrap;
 }
 
 .bites {
@@ -146,4 +151,26 @@ h3 {
   border-bottom: 1px solid black;
   display: block;
   padding: 20px;
+}
+
+.footer {
+  display: flex;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer .title {
+  font-family: Georgia;
+  font-size: 16px;
+  height: 30px;
+  font-weight: bold;
+  color: white;
+  border-right: 3px solid white;
+  padding-right: 15px;
 }
